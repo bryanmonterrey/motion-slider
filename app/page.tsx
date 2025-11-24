@@ -1,8 +1,11 @@
 import { AnimatedSlider } from "./components/slider";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex flex-col min-h-screen items-center justify-center font-sans">
       <div className="flex flex-col items-start justify-start w-[400px] gap-0.5 mb-6">
         <div className="flex items-start gap-2 text-2xl font-semibold">
           Slider
@@ -22,6 +25,13 @@ export default function Home() {
             max={100}
           />
         </div>
+      </div>
+      <div className="absolute bottom-12 flex items-center justify-center">
+        <Link href="https://github.com/bryanmonterrey/motion-slider" target="_blank">
+          <Button variant="outline" size="icon" className="cursor-pointer bg-zinc-800 hover:bg-zinc-800 border-zinc-800">
+            <Image src="/github.svg" alt="Github Logo" width={24} height={24} className="brightness-0 invert" />
+          </Button>
+        </Link>
       </div>
     </div>
   );
