@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center font-sans">
-      <div className="flex flex-col items-start justify-start w-[400px] gap-0.5 mb-6">
+      <div className="flex flex-col items-start justify-start w-[350px] gap-0.5 mb-6">
         <div className="flex items-start gap-2 text-2xl font-semibold">
           Slider
         </div>
@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex items-center justify-center gap-4">
-        <div className="w-[400px]">
+        <div className="w-[350px]">
           <AnimatedSlider
             label="Brightness"
             defaultValue={86}
